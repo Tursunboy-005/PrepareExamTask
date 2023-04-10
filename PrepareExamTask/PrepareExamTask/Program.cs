@@ -10,6 +10,20 @@ namespace PrepareExamTask
     {
         static void Main(string[] args)
         {
+            Console.Write("enter a number : ");
+            string input = Console.ReadLine();
+            string output = "";
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                output += input[i];
+                if ((input.Length - i - 1) % 3 == 0 && i != input.Length - 1)
+                {
+                    output += ",";
+                }
+            }
+            Console.WriteLine(output);
+            Console.ReadLine();
         }
     }
 }
