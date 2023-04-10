@@ -14,17 +14,15 @@ namespace PrepareExamTask
             int n = int.Parse(Console.ReadLine());
             for (int i = 1; i <= n; i++)
             {
-                if(i % 3 == 0)
-                {
-                    Console.WriteLine($"{i} foo ");
-                }
-                if(i % 5 == 0)
-                {
-                    Console.WriteLine($"{i} bar ");
-                }
-                if(i % 3 ==0 && i % 5 == 0)
+                if (i % 3 == 0 && i % 5 == 0)
                 {
                     Console.WriteLine($"{i} foobar ");
+                }else if (i % 3 == 00)
+                {
+                    Console.WriteLine($"{i} foo");
+                }else if (i % 5 == 0)
+                {
+                    Console.WriteLine($"{i} bar");
                 }
             }
             Console.ReadLine();
