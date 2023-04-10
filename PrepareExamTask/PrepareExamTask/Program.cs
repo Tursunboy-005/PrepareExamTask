@@ -12,7 +12,7 @@ namespace PrepareExamTask
         static void Main(string[] args)
         {
            
-            for (long i = 1; i < 10000000000; i++) 
+            for (long i = 1; i < 10000000000; i*=10) 
             {
                 Result(i.ToString());
             }
