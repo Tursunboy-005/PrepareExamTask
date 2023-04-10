@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,10 +11,15 @@ namespace PrepareExamTask
     {
         static void Main(string[] args)
         {
-            Console.Write("enter a number : ");
-            string input = Console.ReadLine();
+           
+            for (long i = 1; i < 10000000000; i++) 
+            {
+                Result(i.ToString());
+            }
+            Console.ReadLine();
+        }
+        public static void Result(string input) {
             string output = "";
-
             for (int i = 0; i < input.Length; i++)
             {
                 output += input[i];
@@ -22,8 +28,10 @@ namespace PrepareExamTask
                     output += ",";
                 }
             }
+
             Console.WriteLine(output);
-            Console.ReadLine();
         }
+            
+        
     }
 }
